@@ -3,13 +3,14 @@ package com.example.bmi;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 
 import java.text.DecimalFormat;
 
 public class MainActivity extends Activity {
 
-
+    Button btnBMI;
     EditText editTen, editChieucao, editCannang, editBMI, editChandoan;
 
     @Override
@@ -22,8 +23,9 @@ public class MainActivity extends Activity {
         editCannang = (EditText) findViewById(R.id.edtCanNang);
         editBMI = (EditText) findViewById(R.id.edtBMI);
         editChandoan = (EditText) findViewById(R.id.edtChuanDoan);
+        btnBMI = findViewById(R.id.btnBMI);
 
-        editChandoan.setOnClickListener(new View.OnClickListener() {
+        btnBMI.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
